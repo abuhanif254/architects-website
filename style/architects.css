@@ -19,8 +19,23 @@
 .display-flex {
   display: flex;
 }
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+/* teams সেকশনের স্টাইল */
+.teams {
+    display: flex;
+    align-items: center; /* ছবি ও টেক্সটকে উল্লম্বভাবে (vertically) মাঝে আনে */
+    gap: 70px; /* ছবি ও টেক্সটের মধ্যে ফাঁকা জায়গা তৈরি করে */
+    margin-top: 85px; /* উপরের সেকশন থেকে দূরত্ব তৈরির জন্য */
+}
 
-
+.team-img-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* মূল সমাধান: দুটি কলাম তৈরি করবে */
+    gap: 24px; /* ছবিগুলোর নিজেদের মধ্যে ফাঁকা জায়গা তৈরি করবে */
+}
 /*header styles */
 
 
